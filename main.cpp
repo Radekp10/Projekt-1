@@ -8,6 +8,7 @@ int main()
     using namespace std;
     Zbior A,B,C,D,E,F,G,H;
 
+//inicjalizazcja zbioru A
     A.dodaj_element(1.1);
     A.dodaj_element(0.1);
     A.dodaj_element(11.41);
@@ -18,6 +19,7 @@ int main()
     A.dodaj_element(9.0);
     A.dodaj_element(-999.88);
 
+//inicjalizacja zbioru B
     B.dodaj_element(34.55);
     B.dodaj_element(-67.88);
     B.dodaj_element(9.0);
@@ -31,11 +33,13 @@ int main()
     B.dodaj_element(404.4);
     B.dodaj_element(-87.8);
 
+//wypisanie zbiorow wraz z liczba elementow
     cout << "A= " << A << endl << "B= " << B << endl << endl;
 	cout << "Liczba elementow zbioru A: " << A.liczba_elementow() << endl;
 	cout << "Liczba elementow zbioru B: " << B.liczba_elementow() << endl << endl;
 
 
+//testowanie programu, wykonywanie operacji na zbiorach
 
     cout << "Rownosc zbiorow A i B:" << endl;
     A==B;
@@ -103,6 +107,7 @@ int main()
     cout << "A*=B" << endl << "A= " << A << endl << endl;
 
 
+//inicjalizacja nowych zbiorow
 
     F.dodaj_element(34.55);
     F.dodaj_element(21.33);
@@ -119,6 +124,8 @@ int main()
     H.dodaj_element(456.0099);
     H.dodaj_element(-0.0313);
 
+
+//kolejne operacje na zbiorach
 
 	cout << "F= " << F << endl << "G= " << G << endl  << "H= " << H << endl << endl;
 	cout << "Liczba elementow zbioru F: " << F.liczba_elementow() << endl;
