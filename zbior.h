@@ -14,9 +14,9 @@ private:
 public:
     Zbior();
     ~Zbior();
-    bool dodaj_element(const double & liczba);
-    bool usun_element(double & liczba);
-    bool czy_nalezy(double & liczba);
+    bool dodaj_element(const double liczba);
+    bool usun_element(const double liczba);
+    bool czy_nalezy(const double liczba);
     int liczba_elementow();
     Zbior operator+(const Zbior & B);
     Zbior operator+=(const Zbior & B);

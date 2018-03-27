@@ -19,7 +19,7 @@ Zbior::~Zbior()					//destruktor
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-bool Zbior::dodaj_element(const double & liczba) //dodanie elementu do zbioru
+bool Zbior::dodaj_element(const double  liczba) //dodanie elementu do zbioru
 {
     if (licznosc<MAX)				//sprawdzenie, czy zbior nie jest pelny
     {
@@ -43,7 +43,7 @@ bool Zbior::dodaj_element(const double & liczba) //dodanie elementu do zbioru
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-bool Zbior::usun_element(double & liczba)	//usuniecie elementu ze zbioru
+bool Zbior::usun_element(const double  liczba)	//usuniecie elementu ze zbioru
 {
     int i,j;					//zmienne do obslugi petli
     if (licznosc>0)				//sprawdzenie, czy zbior nie jest pusty
@@ -67,7 +67,7 @@ bool Zbior::usun_element(double & liczba)	//usuniecie elementu ze zbioru
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-bool Zbior::czy_nalezy(double & liczba)		//sprawdzenie, czy element nalezy do zbioru
+bool Zbior::czy_nalezy(const double  liczba)		//sprawdzenie, czy element nalezy do zbioru
 {
     int i;					//zmienna do obslugi petli
     for (i=0;i<licznosc;i++)
